@@ -1,1 +1,28 @@
-<p>product-form works!</p>
+<div class="row">
+    <div class="col-sm-4 offset-sm-4">
+      <div class="card card-body">
+  
+        <form (submit)="submitProduct()">
+  
+          <div class="form-group">
+            <input type="text" name="name" [(ngModel)]="product.name" class="form-control" placeholder="Product Name" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" name="country" [(ngModel)]="product.country" class="form-control" placeholder="Country">
+          </div>
+          <div class="form-group">
+            <input type="number" name="salary" [(ngModel)]="product.salary" class="form-control" placeholder="Salary">
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" [(ngModel)]="product.email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="text" name="imageURL" [(ngModel)]="product.imageURL" class="form-control" placeholder="Image URL">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
